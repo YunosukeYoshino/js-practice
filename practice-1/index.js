@@ -14,7 +14,7 @@
 // console.log(Boolean(0));
 // console.log(Boolean('hello'));
 
-const score = 50;
+// const score = 50;
 
 // if (score >= 80) {
 //   console.log('Great!');
@@ -24,4 +24,20 @@ const score = 50;
 //   console.log('OK...');
 // }
 
-score >= 80 ? console.log('Great!') : console.log('OK...!');
+// score >= 80 ? console.log('Great!') : console.log('OK...!');
+
+// const score = 60;
+// const name = 'taguchi';
+
+// if (score >= 50) {
+//     if (name === 'taguchi') {
+//         console.log('Good job!');
+//     }
+// }
+
+const score = 15
+const name ='kuroda'
+
+if(score >= 10 && name==='kuroda'){
+    console.log('Good job!');
+}
