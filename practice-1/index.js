@@ -11,3 +11,5 @@ price *= 2;
 console.log(typeof null);
 console.log('8' + 3);
 console.log(parseInt('5', 10) + 3);
+console.log(Boolean(0));
+console.log(Boolean('hello'));
