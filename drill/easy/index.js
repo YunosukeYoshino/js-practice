@@ -353,3 +353,125 @@ const object9 = [
 const found2 = object9.filter(el =>
     el.id != 1)
 console.log(found2);
+
+
+
+const numberCheck = []
+function createSeqArray(num) {
+    for (let i = 0; i < num; i++) {
+        return numberCheck.push(i)
+    }
+}
+
+createSeqArray(4);
+console.log(numberCheck)
+
+function createSeqArray(n) {
+    // 空の配列を生成
+    let array = [];
+    // for ループで引数の数だけ回す
+    for (var i = 1; i < n; i++) {
+        var obj = i
+        console.log(i)
+        // push メソッドで空の配列にオブジェクトを追加
+        array.push(obj);
+    }
+    console.log(i);
+    // ブラウザのコンソールに配列を出力
+    console.log(array);
+    array.push(i)
+    return array
+}
+
+createSeqArray(10);
+
+function createSeqArray(n) {
+    // 空の配列を生成
+    let array = [];
+    // for ループで引数の数だけ回す
+    for (var i = 1; i <= n; i++) {
+        var obj = i
+
+        // push メソッドで空の配列にオブジェクトを追加
+        array.push(obj)
+    }
+
+
+    return array
+}
+
+createSeqArray();
+
+
+function filterEven(array) {
+    const ary = []
+    for (i = 1; i <= array.length; i++) {
+        console.log(i)
+
+        if ((array[i] % 2) == 0) {
+            console.log(array[i])
+            ary.push(array[i]);
+        }
+    }
+    return ary
+}
+filterEven([10, 25, 37, 42, 54]);
+
+function toDouble(array) {
+    const array1 = array.map(v => {
+        return v * 2
+    })
+    return array1
+}
+
+
+toDouble([1, 2, 3]);
+
+
+// function sortByLength(array) {
+//     const ar1 = array.sort(
+//         function (a, b) {
+//             if (a > b)
+//                 return (a > b ? 1 : -1);
+//             return 0;
+//         }
+//     );
+//     return ar1
+//     // console.log(ar1);
+// }
+// sortByLength(["apple", "banana", "chicken", "doughnut", "egg"])
+
+
+
+function sortByLength(array) {
+    const ar1 = array.sort((a, b) => b.length - a.length)
+    // return ar1
+    console.log(ar1);
+}
+sortByLength(["apple", "banana", "chicken", "doughnut", "egg"])
+
+let numList = ["apple", "banana", "chicken", "doughnut", "egg"]
+
+
+// for文を使った場合
+let resultList = []
+for (let i = 0; i < numList.length; i++) {
+    console.log(numList.length);
+    if (i.length = !i.length) {
+        console.log("TEST");
+    }
+}
+
+console.log(resultList);
+
+a = ["abcsf", "defas", "ghi"];
+//配列の要素数を参考にループ
+for (i = 0; i < a.length; i++) {
+    if (a[i].length === a[i].length) {
+        console.log("一致");
+        console.log(a[i].length);
+    }
+    else {
+        console.log("一致しない")
+    }
+}
